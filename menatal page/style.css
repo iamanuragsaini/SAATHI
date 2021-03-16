@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.main {
+    width: 100wh;
+    height: 100vh;
+    background-image: linear-gradient(to right, pink, #dcdde1);
+    background-position: center;
+    background-size: cover;
+}
+
+.mainform {
+    box-shadow: 2px 2px 3px grey;
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 770px) {
+    .mainform {
+        padding-left: 30px;
+        height: 500px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .mainform {
+        width: 300px;
+        position: relative;
+        left: -10px;
+    }
+    #name {
+        width: 100px;
+    }
+    .form-control {
+        width: 100px;
+    }
+}

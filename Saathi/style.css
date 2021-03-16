@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+#navid ul li {
+    padding: 0px 20px;
+}
+
+#navid ul li:hover {
+    background-color: #b2bec3;
+    box-shadow: 1px 2px 10px 1px grey;
+    border: none;
+    display: block;
+}
+
+
+/*---------------------------Image Heading--------------*/
+
+.image {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: absolute;
+    z-index: -20;
+    /* background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)); */
+    opacity: 0.5;
+}
+
+.image h2,
+p {
+    color: #fff;
+}
+
+.bt1 {
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    padding: 7px 35px;
+}
+
+.bt2 {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 7px 35px;
+    color: black;
+}
+
+.bt1:hover {
+    background: transparent;
+    border-color: #111;
+    color: black;
+    font-weight: 700;
+}
+
+.bt2:hover {
+    background: transparent;
+    color: #111;
+    border-color: black;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:1035px) {
+    .bt2 {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:915px) {
+    /* .image img{
+        height: 120vh;
+    } */
+    .para {
+        position: relative;
+        top: -70px;
+    }
+    .bt1 {
+        position: absolute;
+        top: -250px;
+    }
+    .bt2 {
+        position: absolute;
+        top: -200px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:785px) {
+    .image img {
+        height: 140vh;
+    }
+    .image .para {
+        /* font-size: 150x; */
+    }
+    .image {
+        height: 120vh;
+    }
+}
+
+@media only screen and (max-width:590px) {
+    .button {
+        position: relative;
+        /* left: -30%; */
+    }
+    .bt2 {
+        margin-top: 20px;
+        position: absolute;
+        left: -30%;
+    }
+    /* .image img{
+        height:150vh;
+                
+    } */
+}
+
+@media only screen and (max-width:375px) {
+    .bt1 {
+        margin-left: -170px;
+    }
+    .bt2 {
+        margin-left: -170px;
+    }
+    .search {
+        margin-left: -80px;
+    }
+    .image img {
+        height: 100vh;
+    }
+    .content-box {
+        margin-top: -200px;
+    }
+    .content-box2 {
+        /* height: 50vh; */
+    }
+    .content-box2 img {
+        margin-left: -20px;
+        margin-top: 120px;
+    }
+    .image2 .form1 {
+        margin-left: -150px;
+        width: 10px;
+        font-size: 18px;
+    }
+    .image2 .button {
+        margin-left: -100px;
+    }
+    .content-box-3 {
+        height: 50px;
+    }
+    .content-box-3 .icon a {
+        margin-left: -20px;
+        padding-top: 10px;
+        font-size: 35px;
+    }
+}
+
+
+/*-------------------------another image ------------- -------------------*/
+
+
+/* .image1 {
+    background-image: url('pic1.jpg');
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8;
+} */
+
+
+/*------------------------------------services-------------------------------*/
+
+.content-box {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #dfe6e9; */
+}
+
+.content-box h1 {
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.content-box h1::after {
+    content: '';
+    width: 170px;
+    height: 3px;
+    background-color: red;
+    display: block;
+    margin: 20px auto 50px;
+}
+
+.content-box p {
+    color: black;
+}
+
+.service .col-md-4:hover {
+    background: #ff4d73;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+    transition: .5s;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.service .col-md-4:hover .icon {
+    /* border: 1px solid #fff; */
+    color: #fff;
+}
+
+.service .col-md-4:hover p {
+    color: #fff;
+}
+
+@media only screen and (max-width:775px) {
+    .content-box {
+        height: 170vh;
+    }
+}
+
+
+/*-----------------------------------------Features---------------------------------*/
+
+.content-box2 img {
+    width: 380px;
+    height: 400px;
+}
+
+.content-box2 {
+    width: 100%;
+    height: 120vh;
+    background-color: #dfe6e9;
+    padding-top: 90px;
+}
+
+.content-box2 h1 {
+    color: black;
+    text-align: center;
+}
+
+.content-box2 h1::after {
+    content: '';
+    width: 170px;
+    height: 3px;
+    background-color: red;
+    display: block;
+    margin: 20px auto 50px;
+}
+
+.content-box2 p {
+    color: black;
+}
+
+.features ul {
+    /* list-style-type:none; */
+    margin-left: 6px;
+}
+
+.features ul li {
+    font-size: 19px;
+    line-height: 40px;
+}
+
+@media only screen and (max-width:992px) {
+    .content-box2 {
+        height: 200vh;
+        width: 100%;
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width:775px) {
+    .content-box2 {
+        margin-top: 75px;
+        height: 200vh;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .content-box2 {
+        height: 210vh;
+    }
+}
+
+
+/*----------------------------------------Update Gmail Image----------------------------*/
+
+.image2 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('1.jpg');
+    /* opacity:0.5; */
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.image2 .form1 {
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.image2 p {
+    color: #111;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+@media only screen and (max-width:1210px) {
+    .form-inline {
+        position: absolute;
+        left: -10%;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    .form-inline {
+        position: absolute;
+        width: 600px;
+        /* left: -40%; */
+    }
+    .button {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width:565px) {
+    .form-inline {
+        position: absolute;
+        left: -30%;
+    }
+    .button {
+        margin-top: 10px;
+        margin-left: 200px;
+    }
+}
+
+
+/* ---------------------------------------- Social Media-----------------------------*/
+
+.content-box-3 {
+    width: 100%;
+    height: 10vh;
+    background-color: #111;
+    padding-bottom: 70px;
+}
+
+.content-box-3 .icon {
+    color: #fff;
+}
+
+.content-box-3 .icon a {
+    padding-right: 0px;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    padding-left: 30px;
+}
+
+@media only screen and (max-width:600px) {
+    .content-box-3 .icon a {
+        position: relative;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width:993px) {
+    .content-box-3 {
+        padding-top: 120px;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    .content-box-3 {
+        padding-top: 250px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .content-box-3 {
+        padding-top: 650px;
+    }
+}
+
+
+/*-------------------------------------------Footer-----------------------------*/
+
+.content-box-4 {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    padding-top: 100px;
+}
+
+.footer h2,
+p,
+h3 {
+    color: #fff;
+    line-height: 40px;
+}
+
+.content-box-4 h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.content-box-4 h1::after {
+    content: '';
+    width: 170px;
+    height: 3px;
+    background-color: red;
+    display: block;
+    margin: 20px auto 50px;
+}
+
+
+}
+@media only screen and (max-width:775px) {
+    .content-box-4 {
+        height: 600vh;
+        background-color: #111;
+    }
+    
+    .content-box-4 .icon {
+        padding-top: 30px;
+    }
+}
+
+/* @media only screen and (max-width:770px){
+    /* .content-box-4{
+        height: 130vh;
+        background-color:#111;
+    } */
+
+/* .content-box-4 .icon{
+       padding-top: 30px;
+    } 
+}  */
+
+/* @media only screen and (max-width:576px){
+    /* .content-box-4{
+        height: 200vh;
+        background-color:#111;
+    } 
+    .content-box-4 .icon{
+       padding-top: 30px;
+    }
+}  */

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <section class="main">
+        <!---------------------------- Navigation -------------- -->
+
+        <section>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" style="font-size: 25px; letter-spacing: 1px; font-weight: bold;">SAATHI</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- <-----------------------Form------------------------->
+        <section class="mainform container">
+            <div class="row">
+
+                <form class="form-horizontal col-12">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="name" style="font-size: 20px;font-weight: 200;">Name:</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" style="width: 300px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="age" style="font-size: 20px;font-weight: 200;">Age:</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="age" placeholder="Enter age" style="width: 300px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="gen" style="font-size: 20px;font-weight: 200;">Gender:</label>
+                        <div class="radio">
+                            <label><input type="radio" name="gen">Male</label>
+                            <label><input type="radio" name="gen">Female</label>
+                            <label><input type="radio" name="gen">Prefer not to say</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="pro" style="font-size: 20px;font-weight: 200;">Profession:</label>
+                        <div class="col-sm-10">
+
+                            <textarea name="" id="pro" class="form-control" rows="3" required style="width: 300px;"></textarea>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="button" class="btn btn-primary" onclick="fun()">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+
+    </section>
+    <script>
+        // function fun() {
+        //     swal({
+        //             title: "Are you sure?",
+        //             text: "Saathi needs your permission to access your mic!",
+        //             icon: "warning",
+        //             buttons: true,
+        //             dangerMode: true,
+        //         })
+        //         .then((willDelete) => {
+        //             if (willDelete) {
+        //                 swal({
+        //                         text: "Saathi wishes to speak to you? Do you want to talk to him!",
+        //                         buttons: ["Deny!", "Allow!"],
+
+        //                     })
+        //                     .then((willDelete) => {
+        //                         if (willDelete) {
+        //                             swal({
+        //                                 title: "Are you sure?",
+        //                                 text: "Saathi want permission to access your camera!",
+        //                                 icon: "warning",
+        //                                 buttons: true,
+        //                                 dangerMode: true,
+        //                             });
+        //                         } else {
+        //                             swal({
+        //                                 title: "Oops...",
+        //                                 text: "Something went wrong!",
+        //                                 icon: "error",
+        //                                 button: "Okay!",
+        //                             })
+        //                         }
+
+        //                     });
+
+
+        //             } else {
+        //                 swal({
+        //                     title: "Oops...",
+        //                     text: "Something went wrong!",
+        //                     icon: "error",
+        //                     button: "Okay!",
+        //                 })
+        //             }
+        //         });
+
+        // }
+    </script>
+</body>
+
+</html>
